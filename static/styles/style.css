@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding:0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333333;
+}
+.logo{
+    cursor: pointer;
+}
+img{
+    padding-left: 5px;
+}
+li,a,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+.nav_link{
+    list-style: none;
+}
+.nav_link li{
+    display: inline-block;
+    padding: 0px 35px;
+}
+.nav_link li a{
+    transition: all 0.4s ease 0s;
+}
+.nav_link li a:hover{
+    color: grey;
+}
+header button{
+    padding: 9px 25px;
+    background-color: #385D6C;
+    margin-right: 35px;
+    border: none;
+    border-radius: 60px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: grey;
+    border-radius: 60px;    
+}
+body {
+    background:linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
+}
+
+.signup-form{
+    font-family: "Montserrat", sans-serif;
+    max-width: 650px;
+    width: 100%;
+    margin: 5% auto;
+    background: linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: auto;
+}
+
+.form-header{
+    padding: 10px 1px;
+    
+    background-color: #EFF0F1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+
+.font-header h2{
+    font-size: 30px;
+    text-align: center;
+    color: #666;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-bottom: 1px solid #cccccc;
+    font-weight: 700;
+}
+
+.form-body{
+    padding: 20px ;
+    color: #666;
+}
+
+
+.form-group{
+    margin-bottom: 30px;
+}
+
+
+
+.form-body .label-title{
+    color: #1BBA93;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.form-body .form-input{
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+.horizontal-group .left{
+    float: left;
+    width: 49%;
+
+}
+  
+.horizontal-group .right{
+    float: right;
+    width: 49%;
+}
+  
+input[type="file"] {
+   outline: none;
+   cursor: pointer;
+   font-size: 17px;
+}
+  
+#range-label {
+   width: 15%;
+   padding: 5px;
+   background-color: #1BBA93;
+   color: white;
+   border-radius: 5px;
+   font-size: 17px;
+   position: relative;
+   top: -8px;
+}
+  
+  
+::-webkit-input-placeholder {
+   color: #d9d9d9;
+}
+  
+/*---------------------------------------*/
+/* Form Footer */
+/*---------------------------------------*/
+.form-footer {
+   clear: both;
+}
+
+/*---------------------------------------*/
+/* Form Footer */
+/*---------------------------------------*/
+.signup-form .form-footer  {
+    background-color: #EFF0F1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:10px 40px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+}
+  
+.signup-form span {
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#999;  
+    font-style: italic;
+    font-weight: thin;
+}
+  
+.btn {
+     display: inline-block;
+     padding:10px 20px;
+     background-color: #1BBA93;
+     font-size:17px;
+     border:none;
+     border-radius:5px;
+     color:#bcf5e7;
+     cursor:pointer;
+     transition: all 0.4s ease 0s;
+     
+}
+  
+.btn:hover {
+    background-color: #169c7b;
+    color:white;
+}
+
+.input-group{
+    margin-top: 8px;
+}
+
+@media (max-width: 584px){
+    .signup-form{
+        max-width: 100%;
+    }
+    .form-body .form-input{
+        font-size: 17px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 34px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 8px;
+        color: #333333;
+        text-align: left;
+        border: 1px solid #d6d6d6;
+        border-radius: 4px;
+        background: white;
+        outline: none;
+    }
+    .input-group{
+        width: 100%;
+    }
+    .form-body .label-title{
+        max-height: 300px;
+    }
+    .signup-form{
+        max-height: 100%;
+        overflow-y: scroll;
+    }
+        
+}

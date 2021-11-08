@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/shop.css' %}">
+</head>
+<body>
+  <header>
+      <a href="home.html"><img class="logo" src="Pharma_Co._Logo__1_-removebg-preview.png" alt="logo"></a>
+      <nav>
+          <ul class="nav_link">
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">COVID TRACKER</a></li>
+          </ul>
+      </nav>
+      <button type="button" class="button" class="nav_btn" onclick="location.href = '/register'">REGISTER</button>
+  </header><br><br><br><br>
+  <form class="" action="/add_to_cart" method="post">
+    <div class="items">
+      <button type="button" name class="add_to_cart">add to cart 1</button>
+      <button type="button" name class="buy_now">buy now 1</button><br><br>
+
+      <button type="button" name class="add_to_cart">add to cart 2</button>
+      <button type="button" name class="buy_now">buy now 2</button><br><br>
+
+      <button type="button" name class="add_to_cart">add to cart 3</button>
+      <button type="button" name class="buy_now">buy now 3</button><br><br>
+
+      <button type="button" name class="add_to_cart">add to cart 1</button>
+      <button type="button" name class="buy_now">buy now 4</button><br><br>
+
+    </div>
+  </form>
+
+</body>
+</html>

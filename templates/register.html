@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}login.css">
+</head>
+<body>
+
+  <header>
+      <a href="home.html"><img class="logo" src="Pharma_Co._Logo__1_-removebg-preview.png" alt="logo"></a>
+      <nav>
+          <ul class="nav_link">
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">COVID TRACKER</a></li>
+          </ul>
+      </nav>
+      <button type="button" name="button" class="nav_btn" onclick="location.href = '/register'">REGISTER</button>
+  </header><br><br><br><br>
+  <form action="register" method="post">
+      {%  csrf_token %}
+      <input name="first_name" type="text">&nbsp &nbsp enter first name<br><br>
+      <input name="last_name" type="text">&nbsp &nbsp enter last name<br><br>
+      <input name="username" type="text">&nbsp &nbsp enter username<br><br>
+      <input name="password" type="password">&nbsp &nbsp enter password<br><br>
+      <input name="phone_no" type="text">&nbsp &nbsp enter phone number<br><br>
+      <input name="email" type="email">&nbsp &nbsp enter email<br><br>
+      <input name="address" type="text">&nbsp &nbsp enter address<br><br>
+      <input name="gender" type="text">&nbsp &nbsp enter gender<br><br>
+      <input name="age" type="text">&nbsp &nbsp enter age<br><br><br>
+
+        <button type="submit" onclick="location.href">Create Account</button><br><br>
+  </form>
+
+
+  <div>
+      {% for message in messages %}
+    {{ message }}
+      {% endfor %}
+  </div>
+</body>
+</html>
